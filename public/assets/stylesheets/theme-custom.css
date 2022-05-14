@@ -1,0 +1,82 @@
+/* Add here all your CSS customizations */
+.background-trans{
+	background: transparent !important;
+}
+.background-grey{
+	background: #d3d3d3;
+}
+.background-blue{
+	background: #00b7f1;
+}
+.m-0-div{
+	position: relative;
+	 min-height: 150px;
+}
+.heart{
+	position: relative;
+	background: red;
+	height: 160px;
+	width: 100px;
+	border-radius: 200px 200px 0 0;
+	transform: rotate(45deg);
+}
+.heart::before{
+	content:"";
+	height: 160px;
+	width: 100px;
+	border-radius: 200px 200px 0 0;
+	background: red;
+	position: absolute;
+	transform: rotate(-90deg);
+	left: -30px;
+	top: 30px;
+}
+.heart::after{
+	content: "";
+	background: black;
+	position: absolute;
+	border-radius: 200px 200px 0 0;
+	transform: rotate(-90deg);
+	left: -30px;
+	top: 30px;
+
+}
+.m-0-div-child{
+	position: absolute;
+	bottom: 0;
+}
+.row_delete i:hover{
+	font-size: 120%;
+	color:red !important;
+	cursor: pointer;
+}
+.add-icon:hover{
+	font-size: 120%;
+	color:green !important;
+	cursor: pointer;
+}
+.del-icon:hover{
+	font-size: 120%;
+	color:red !important;
+	cursor: pointer;
+}
+@media only screen and (max-width: 1800px) {
+	.text-reconcile {
+		font-size:12px !important;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.text-reconcile {
+		font-size:10px !important;
+	}
+}
+@media only screen and (max-width: 1150px) {
+	.text-reconcile {
+		font-size:8px !important;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.text-reconcile {
+		font-size:14px !important;
+	}
+}
